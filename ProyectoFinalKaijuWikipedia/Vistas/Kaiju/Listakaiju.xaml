@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalKaijuWikipedia.Vistas.Kaiju.Listakaiju"
+             NavigationPage.HasNavigationBar="False">
+    <Grid RowDefinitions="60,*" BackgroundColor="#000000">
+        <Label Text="KAIJU ENCYCLOPEDIA" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontSize="30" FontAttributes="Bold"/>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Listakaiju}">
+            <CollectionView.ItemTemplate >
+                <DataTemplate>
+                    <Grid RowDefinitions="150, *" Padding="20">
+                        <Frame Grid.Row="1" WidthRequest="150" HorizontalOptions="Center" CornerRadius="15" BackgroundColor="Gray">
+                            <StackLayout HorizontalOptions="Center">
+                                <Label Text="{Binding Nombre}" CharacterSpacing="1" FontSize="20" TextColor="White"/>
+                            </StackLayout>
+                        </Frame>
+                        <Image Source="{Binding Icono}" Grid.RowSpan="2" HeightRequest="180" VerticalOptions="StartAndExpand"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="+" Grid.Row="1" HeightRequest="80" WidthRequest="80" VerticalOptions="End" HorizontalOptions="End" CornerRadius="40" Margin="15" FontSize="40" FontAttributes="Bold" Command="{Binding Iraregistrocommand}"/>
+    </Grid>
+</ContentPage>
