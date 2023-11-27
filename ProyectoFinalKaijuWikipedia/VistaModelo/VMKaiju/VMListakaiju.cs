@@ -44,10 +44,14 @@ namespace ProyectoFinalKaijuWikipedia.VistaModelo.VMKaiju
         {
 
         }
+        public async Task iradetalle()
+        {
+            await Navigation.PushAsync(new detalles());
+        }
         #endregion
         #region COMANDOS    
         public ICommand Iraregistrocommand => new Command(async () => await Iraregistro());
-        public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
+        public ICommand iradetallecommand => new Command(async()=> await iradetalle());
         #endregion
     }
 }
