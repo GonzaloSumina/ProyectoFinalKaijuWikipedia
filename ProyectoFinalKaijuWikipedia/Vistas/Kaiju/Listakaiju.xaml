@@ -17,6 +17,9 @@
                         <Frame WidthRequest="150" HorizontalOptions="Center" CornerRadius="15" BackgroundColor="Gray">
                             <StackLayout VerticalOptions="Center">
                                 <Image Source="{Binding Icono}" HeightRequest="180" VerticalOptions="StartAndExpand" Aspect="AspectFill"/>
+                                
+                                
+                                
                                 <Label Text="{Binding Nombre}" CharacterSpacing="1" FontSize="20" TextColor="White" VerticalOptions="End"/>
                             </StackLayout>
                             <Frame.GestureRecognizers>
@@ -28,6 +31,17 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <Button Text="+" Grid.Row="1" HeightRequest="80" WidthRequest="80" VerticalOptions="End" HorizontalOptions="End" CornerRadius="40" Margin="15" FontSize="40" FontAttributes="Bold" Command="{Binding Iraregistrocommand}"/>
+        <Button 
+        Text="+" 
+        Grid.Row="1" 
+        HeightRequest="80" 
+        WidthRequest="80" 
+        VerticalOptions="End" 
+        HorizontalOptions="End" 
+        CornerRadius="40" 
+        Margin="15" 
+        FontSize="40" 
+        FontAttributes="Bold" 
+        Command="{Binding Iraregistrocommand}"/>
     </Grid>
 </ContentPage>

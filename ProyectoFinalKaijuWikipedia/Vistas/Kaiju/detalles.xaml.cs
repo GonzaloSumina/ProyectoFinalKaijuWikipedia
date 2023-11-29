@@ -9,8 +9,9 @@ namespace ProyectoFinalKaijuWikipedia.Vistas.Kaiju
 
         public detalles()
         {
-            InitializeComponent();
+            InitializeComponent(MKaiju parametros);
             recopilarButton.TranslationX = 0; // Posición inicial
+            BindingContext =new VMdetalles(Navigation, parametros);
         }
 
         protected override async void OnAppearing()

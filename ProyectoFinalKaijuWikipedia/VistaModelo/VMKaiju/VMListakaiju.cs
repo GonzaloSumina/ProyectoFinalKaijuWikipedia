@@ -36,18 +36,22 @@ namespace ProyectoFinalKaijuWikipedia.VistaModelo.VMKaiju
             var funcion = new Dkaiju();
             Listakaiju = await funcion.Mostrarkaiju();
         }
+
         public async Task Iraregistro()
         {
             await Navigation.PushAsync(new Registrarkaiju());
         }
+
         public void ProcesoSimple()
         {
 
         }
-        public async Task iradetalle()
+        
+        public async Task iradetalle(MKaiju parametros)
         {
-            await Navigation.PushAsync(new detalles());
+            await Navigation.PushAsync(new detalles(parametros));
         }
+
         #endregion
         #region COMANDOS    
         public ICommand Iraregistrocommand => new Command(async () => await Iraregistro());

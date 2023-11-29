@@ -11,11 +11,13 @@ namespace ProyectoFinalKaijuWikipedia.VistaModelo.VMKaiju
     {
         #region VARIABLES
         string _Texto;
+        public MKaiju parametrosRecibe {get; set;}
         #endregion
         #region CONSTRUCTOR
-        public VMdetalles(INavigation navigation)
+        public VMdetalles(INavigation navigation,MKaiju parametros)
         {
             Navigation = navigation;
+            parametrosRecibe = parametros;
         }
         #endregion
         #region OBJETOS
