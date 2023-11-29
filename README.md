@@ -9,7 +9,18 @@
 El proyecto "ProyectoFinalKaijuWikipedia" es una aplicación Xamarin.Forms diseñada para proporcionar información detallada sobre monstruos ficticios conocidos como "Kaiju". La aplicación presenta una lista que puede llevar a una interfaz de usuario que muestra datos como el nombre, alias, altura, peso y descripción de cada Kaiju.
 
 ### Interfaz de usuario
-Al iniciar la aplicación se muestra una pantalla con los Kaijus existentes, un modelo base y una opción para agregar más (esta última añadirá directamente a la base de datos de Firebase). Al seleccionar un Kaiju, nos mostrará una ventana con los detalles almacenados en la base de datos. Al seleccionar la opción de añadir, nos dará una ventana que solicitará los datos del Kaiju que queramos agregar para enviarlos a la base de datos.
+Al iniciar la aplicación se muestra una pantalla con los Kaijus existentes, un modelo base y una opción para agregar más (esta última añadirá directamente a la base de datos de Firebase). 
+
+![Lista](https://github.com/ZeroDyna/Formulario_xamarin/blob/main/Lista.png?raw=true)
+
+
+Al seleccionar un Kaiju, nos mostrará una ventana con los detalles almacenados en la base de datos.
+
+![detalles](https://github.com/ZeroDyna/Formulario_xamarin/blob/main/Detalles.png?raw=true)
+
+Al seleccionar la opción de añadir nos dará una ventana que solicitará los datos del Kaiju que queramos agregar para enviarlos a la base de datos.
+
+![Añadir](https://github.com/ZeroDyna/Formulario_xamarin/blob/main/A%C3%B1adir.png?raw=true)
 
 ### Problemas Detectados
 
