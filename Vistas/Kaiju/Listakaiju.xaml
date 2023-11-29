@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalKaijuWikipedia.Vistas.Kaiju.Listakaiju"
+             NavigationPage.HasNavigationBar="False">
+    <Grid RowDefinitions="60,*" BackgroundColor="#000000">
+        <Label Text="KAIJU ENCYCLOPEDIA" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontSize="30" FontAttributes="Bold"/>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Listakaiju}"
+                           Margin="0,0,0,0"
+                            x:Name="Lista">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="20">
+                        <Frame WidthRequest="150" HorizontalOptions="Center" CornerRadius="15" BackgroundColor="Gray">
+                            <StackLayout VerticalOptions="Center">
+                                <Image Source="{Binding Icono}" HeightRequest="180" VerticalOptions="StartAndExpand" Aspect="AspectFill"/>
+                                
+                                
+                                
+                                <Label Text="{Binding Nombre}" CharacterSpacing="1" FontSize="20" TextColor="White" VerticalOptions="End"/>
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding
+                                    Path=BindingContext.iradetallecommand, Source={x:Reference Lista}}" CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button 
+        Text="+" 
+        Grid.Row="1" 
+        HeightRequest="80" 
+        WidthRequest="80" 
+        VerticalOptions="End" 
+        HorizontalOptions="End" 
+        CornerRadius="40" 
+        Margin="15" 
+        FontSize="40" 
+        FontAttributes="Bold" 
+        Command="{Binding Iraregistrocommand}"/>
+    </Grid>
+</ContentPage>
