@@ -55,3 +55,22 @@ C:\Users\Usuario\Desktop\Pruebas\ProyectoFinalKaijuWikipedia\ProyectoFinalKaijuW
 C:\Users\Usuario\Desktop\Pruebas\ProyectoFinalKaijuWikipedia\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.dll
 C:\Users\Usuario\Desktop\Pruebas\ProyectoFinalKaijuWikipedia\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\refint\ProyectoFinalKaijuWikipedia.dll
 C:\Users\Usuario\Desktop\Pruebas\ProyectoFinalKaijuWikipedia\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.pdb
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\bin\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.deps.json
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\bin\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.dll
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\bin\Debug\netstandard2.0\ref\ProyectoFinalKaijuWikipedia.dll
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\bin\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.pdb
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.csproj.AssemblyReference.cache
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\Vistas\Kaiju\detalles.xaml.g.cs
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\Vistas\Kaiju\Listakaiju.xaml.g.cs
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\Vistas\Kaiju\Registrarkaiju.xaml.g.cs
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\Vistas\Page1.xaml.g.cs
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\Vistas\Page2.xaml.g.cs
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.AssemblyInfoInputs.cache
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.AssemblyInfo.cs
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.csproj.CoreCompileInputs.cache
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.dll
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\refint\ProyectoFinalKaijuWikipedia.dll
+C:\Users\renat\Desktop\Nueva carpeta\ProyectoFinalKaijuWikipedia-master\ProyectoFinalKaijuWikipedia\obj\Debug\netstandard2.0\ProyectoFinalKaijuWikipedia.pdb
