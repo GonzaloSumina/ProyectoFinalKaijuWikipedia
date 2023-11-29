@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalKaijuWikipedia.Vistas.Kaiju.detalles"
              NavigationPage.HasNavigationBar="False">
@@ -12,59 +11,64 @@
                 <GradientStop Color="#000" Offset="1" />
             </LinearGradientBrush>
         </Grid.Background>
-
-        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
+        <StackLayout>
+            <StackLayout Padding="20">
+            <!-- Etiqueta para mostrar el nombre -->
             <Label Text="{Binding parametrosRecibe.Nombre}"
-                   FontSize="50"
+                   FontSize="30"
                    FontAttributes="Bold"
                    TextColor="White"
+                   Margin="0,0,0,10"/>
+
+            <!-- Etiquetas adicionales para mostrar el alias, altura y peso -->
+            <Label Text="{Binding parametrosRecibe.Alias}"
+                   FontSize="18"
+                   TextColor="White"
+                   Margin="0,0,0,5"/>
+
+            <Label Text="{Binding parametrosRecibe.Altura}"
+                   FontSize="18"
+                   TextColor="White"
+                   Margin="0,0,0,5"/>
+
+            <Label Text="{Binding parametrosRecibe.Peso}"
+                   FontSize="18"
+                   TextColor="White"
+                   Margin="0,0,0,5"/>
+
+            <!-- Etiqueta para mostrar la descripción -->
+            <Label Text="{Binding parametrosRecibe.Descripcion}"
+                   FontSize="16"
+                   TextColor="White"
+                   LineBreakMode="WordWrap"
+                   Margin="0,10,0,20"/>
+
+            <!-- Imagen -->
+                <Image Source="{Binding parametrosRecibe.Icono}"
                    HorizontalOptions="Start"
-                   VerticalOptions="Start"
-                   Margin="20,20,0,0"/>
-        </StackLayout>
-
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <!-- Contenido de la descripción dentro del Frame -->
-            <Frame x:Name="descriptionFrame"
-                   BackgroundColor="#A9A9A9"
-                   HasShadow="True"
-                   Opacity="0.5"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand"
-                   Margin="10"
-                   Padding="10"
-                   WidthRequest="300"
-                   CornerRadius="15"
-                   HeightRequest="200">
-                <Label Text="{Binding parametrosRecibe.Descripcion}"
-                       FontSize="10"
-                       FontAttributes="Bold"
-                       TextColor="White"
-                       Margin="0,0,0,0" />
-            </Frame>
-
-            <!-- Imagen después del Frame -->
-            <Image Source="{Binding parametrosRecibe.Icono}"
-                   HorizontalOptions="Start"
-                   Margin="0,20,0,0"/>
-
-            <!-- Nuevo contenido con animación -->
-            <Frame x:Name="buttonFrame"
+                   Margin="100,10,100,100"
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   />
+                <Frame x:Name="buttonFrame"
                    CornerRadius="30"
                    Margin="0,20,0,0"
                    HeightRequest="65"
                    HasShadow="False"
                    Padding="0">
-                <Grid ColumnDefinitions="*,*">
-                    <Button x:Name="recopilarButton"
+                    <Grid ColumnDefinitions="*,*">
+                        <Button x:Name="recopilarButton"
                             Text="Recopilar"
                             BackgroundColor="DarkRed"
                             CornerRadius="30"
                             FontAttributes="Bold"
                             Margin="-5,0,0,0"
                             Clicked="OnRecopilarButtonClicked"/>
-                </Grid>
-            </Frame>
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
         </StackLayout>
     </Grid>
 </ContentPage>
+
