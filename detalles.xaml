@@ -1,0 +1,74 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalKaijuWikipedia.Vistas.Kaiju.detalles"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#000" Offset="0.1" />
+                <GradientStop Color="#2C2D2D" Offset="0.4" />
+                <GradientStop Color="#000" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackLayout>
+            <StackLayout Padding="20">
+            <!-- Etiqueta para mostrar el nombre -->
+            <Label Text="{Binding parametrosRecibe.Nombre}"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,0,0,10"/>
+
+            <!-- Etiquetas adicionales para mostrar el alias, altura y peso -->
+            <Label Text="{Binding parametrosRecibe.Alias}"
+                   FontSize="18"
+                   TextColor="White"
+                   Margin="0,0,0,5"/>
+
+            <Label Text="{Binding parametrosRecibe.Altura}"
+                   FontSize="18"
+                   TextColor="White"
+                   Margin="0,0,0,5"/>
+
+            <Label Text="{Binding parametrosRecibe.Peso}"
+                   FontSize="18"
+                   TextColor="White"
+                   Margin="0,0,0,5"/>
+
+            <!-- Etiqueta para mostrar la descripción -->
+            <Label Text="{Binding parametrosRecibe.Descripcion}"
+                   FontSize="16"
+                   TextColor="White"
+                   LineBreakMode="WordWrap"
+                   Margin="0,10,0,20"/>
+
+            <!-- Imagen -->
+                <Image Source="{Binding parametrosRecibe.Icono}"
+                   HorizontalOptions="Start"
+                   Margin="90,10,90,90"
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   />
+                <Frame x:Name="buttonFrame"
+                   CornerRadius="30"
+                   Margin="0,20,0,0"
+                   HeightRequest="65"
+                   HasShadow="False"
+                   Padding="0">
+                    <Grid ColumnDefinitions="*,*">
+                        <Button x:Name="recopilarButton"
+                            Text="Objetivo Abatido"
+                            BackgroundColor="DarkRed"
+                            CornerRadius="30"
+                            FontAttributes="Bold"
+                            Margin="-5,0,0,0"
+                            Clicked="OnRecopilarButtonClicked"/>
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
+
