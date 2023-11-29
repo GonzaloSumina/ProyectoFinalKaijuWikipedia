@@ -55,7 +55,7 @@ namespace ProyectoFinalKaijuWikipedia.VistaModelo.VMKaiju
         #endregion
         #region COMANDOS    
         public ICommand Iraregistrocommand => new Command(async () => await Iraregistro());
-        public ICommand iradetallecommand => new Command(async()=> await iradetalle());
+        public ICommand iradetallecommand => new Command<MKaiju>(async(p)=> await iradetalle(p));
         #endregion
     }
 }

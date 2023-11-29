@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinalKaijuWikipedia.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,10 +15,10 @@ namespace ProyectoFinalKaijuWikipedia.VistaModelo.VMKaiju
         public MKaiju parametrosRecibe {get; set;}
         #endregion
         #region CONSTRUCTOR
-        public VMdetalles(INavigation navigation,MKaiju parametros)
+        public VMdetalles(INavigation navigation,MKaiju parametrosTrae)
         {
             Navigation = navigation;
-            parametrosRecibe = parametros;
+            parametrosRecibe = parametrosTrae;
         }
         #endregion
         #region OBJETOS

@@ -1,17 +1,20 @@
-﻿using System;
+﻿using ProyectoFinalKaijuWikipedia.Modelo;
+using ProyectoFinalKaijuWikipedia.VistaModelo.VMKaiju;
+using System;
 using Xamarin.Forms;
 
-namespace ProyectoFinalKaijuWikipedia.Vistas.Kaiju
-{
+
+namespace ProyectoFinalKaijuWikipedia.Vistas.Kaiju {
+
     public partial class detalles : ContentPage
     {
         private bool isButtonMoved = false;
 
-        public detalles()
+        public detalles(MKaiju parametros)
         {
-            InitializeComponent(MKaiju parametros);
+            InitializeComponent();
             recopilarButton.TranslationX = 0; // Posición inicial
-            BindingContext =new VMdetalles(Navigation, parametros);
+            BindingContext = new VMdetalles(Navigation, parametros);
         }
 
         protected override async void OnAppearing()

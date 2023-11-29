@@ -14,7 +14,7 @@
         </Grid.Background>
 
         <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
-            <Label Text="Zetton"
+            <Label Text="{Binding parametrosRecibe.Nombre}"
                    FontSize="50"
                    FontAttributes="Bold"
                    TextColor="White"
@@ -36,7 +36,7 @@
                    WidthRequest="300"
                    CornerRadius="15"
                    HeightRequest="200">
-                <Label Text="Tu texto de descripción aquí"
+                <Label Text="{Binding parametrosRecibe.Descripcion}"
                        FontSize="10"
                        FontAttributes="Bold"
                        TextColor="White"
@@ -44,7 +44,7 @@
             </Frame>
 
             <!-- Imagen después del Frame -->
-            <Image Source="https://i.redd.it/sc2ksbmf68o41.jpg"
+            <Image Source="{Binding parametrosRecibe.Icono}"
                    HorizontalOptions="Start"
                    Margin="0,20,0,0"/>
 
